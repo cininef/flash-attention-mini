@@ -1,0 +1,13 @@
+[project]
+name = "flash-attention-mini"
+version = "0.1.0"
+description = "Educational, CPU-only tiled/online-softmax attention (FlashAttention algorithm) with correctness tests and a peak-memory benchmark against naive attention."
+requires-python = ">=3.10"
+dependencies = ["torch"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["flash_attention_mini*"]
